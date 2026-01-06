@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <iframe src="" style="width: 100%;height: 100vh;" id="iframe" frameborder="0"></iframe>
+</body>
+</html>
+<script>
+let iframe = document.getElementById('iframe');
+let time = Date.now();
+iframe.src = `https://parking-vz.215123.cn/parking/coupon/couponStatic?t=${time}&userId=98&shopId=98&parkId=40`;
+console.log(iframe.contents)
+
+</script>
